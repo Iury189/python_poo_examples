@@ -1,0 +1,15 @@
+from carro import Carro
+
+c1 = Carro()
+marca_carro = str(input("Digite a marca do carro: "))
+c1.setMarca(marca_carro)
+modelo_carro = str(input("Digite o modelo do carro: "))
+c1.setModelo(modelo_carro)
+cor_carro = str(input("Digite a cor do carro: "))
+c1.setCor(cor_carro)
+ano_carro = int(input("Digite o ano de fabricação do carro: "))
+c1.setAno(ano_carro)
+valor_carro = float(input("Digite o valor do carro: "))
+c1.setValor(valor_carro)
+print("\n")
+c1.Interacao()
