@@ -1,13 +1,16 @@
 import veiculo
 import locale
+from datetime import datetime
 
 class Carro(veiculo.Veiculo):
 
   def Interacao(self):
     locale.setlocale(locale.LC_ALL, '')
+    hora_atual = datetime.now().strftime('%d-%m-%Y %H:%M:%S')
     valor_formatado = locale.currency(self.getValor(), symbol=True, grouping=True, international=False)
     print(f"Marca: {self.getMarca()}")
     print(f"Modelo: {self.getModelo()}")
     print(f"Cor: {self.getCor()}")
     print(f"Ano: {self.getAno()}")
     print(f"Valor: {valor_formatado}")
+    print(f"Hora atual: {hora_atual}")
