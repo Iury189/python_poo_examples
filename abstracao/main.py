@@ -1,0 +1,15 @@
+from moto import Moto
+
+m1 = Moto()
+marca_moto= str(input("Digite a marca da moto: "))
+m1.setMarca(marca_moto)
+modelo_moto = str(input("Digite o modelo da moto: "))
+m1.setModelo(modelo_moto)
+cor_moto = str(input("Digite a cor da moto: "))
+m1.setCor(cor_moto)
+ano_moto = int(input("Digite o ano de fabricação da moto: "))
+m1.setAno(ano_moto)
+valor_moto = float(input("Digite o valor da moto: "))
+m1.setValor(valor_moto)
+print("\n")
+m1.Interacao()
