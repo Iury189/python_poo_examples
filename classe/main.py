@@ -6,13 +6,13 @@ while True:
   if (len(nome_dobrador) == 0):
     print('O nome não pode ficar vazio, digite novamente.')
   else:
+    d1.setNome(nome_dobrador)
     break
-d1.setNome(nome_dobrador)
 while True:
   elemento_dobrador = str(input("Digite o elemento do dobrador: "))
   if (len(elemento_dobrador) == 0):
     print('O elemento do dobrador não pode ficar vazio, digite novamente.')
   else:
+    d1.setElemento(elemento_dobrador)
     break
-d1.setElemento(elemento_dobrador)
 d1.Falar()
