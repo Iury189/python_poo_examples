@@ -12,5 +12,4 @@ class Dobrador:
     def setNome(self, nome): self.nome = nome
     def setElemento(self, elemento): self.elemento = elemento
     # Método Falar()
-    def Falar(self):
-      print(f"Meu nome é {self.getNome()} e o elemento que domino é o {self.getElemento()}.")
+    def Falar(self): print(f"Dobrador: {self.getNome()} | Elemento: {self.getElemento()}")
