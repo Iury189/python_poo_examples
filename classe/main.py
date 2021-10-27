@@ -20,5 +20,6 @@ while True:
   else:
     d1.setElemento(elemento_dobrador.title())
     break
-voz.say(d1.Falar())
+print(f'Dobrador: {d1.getNome()} | Elemento: {d1.getElemento()}')
+voz.say(f'Dobrador: {d1.getNome()} | Elemento: {d1.getElemento()}')
 voz.runAndWait()
