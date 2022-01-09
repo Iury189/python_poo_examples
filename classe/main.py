@@ -1,19 +1,19 @@
-from dobrador import Dobrador
+from jojo import JoJo
 
-d1 = Dobrador()
+j1 = JoJo()
 while True:
-  nome_dobrador = str(input("Digite o nome do dobrador: "))
-  if (len(nome_dobrador.strip()) <= 0):
-    print('O nome não pode ficar vazio, digite novamente.')
+  nome = str(input("Digite o nome do usuário: "))
+  if (len(nome.strip()) <= 0):
+    print("O nome do usuário não pode ficar vazio.")
   else:
-    d1.setNome(nome_dobrador.title())
+    j1.SetNome(nome.title())
     break
 while True:
-  elemento_dobrador = str(input("Digite o elemento do dobrador: "))
-  if (len(elemento_dobrador.strip()) <= 0):
-    print('O elemento do dobrador não pode ficar vazio, digite novamente.')
+  stand = str(input(f"Digite o nome do stand de {j1.GetNome()}: "))
+  if (len(stand.strip()) <= 0):
+    print(f"O nome do Stand de {j1.GetNome()} não pode ficar vazio.")
   else:
-    d1.setElemento(elemento_dobrador.title())
+    j1.SetStand(stand.title())
     break
-d1.Falar()
-# del d1
+j1.Falar()
+#del j1
