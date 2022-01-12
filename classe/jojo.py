@@ -4,7 +4,7 @@ class JoJo:
         self.status_stand = False
     # Destrutor
     def __del__(self):
-        print (f"O usuário {self.GetNome()} foi excluído pelo desconstrutor.")
+        print (f"O usuário {self.GetNome()} foi excluído pelo destrutor.")
     # Getter
     def GetNome(self): return self.nome
     def GetStand(self): return self.stand
