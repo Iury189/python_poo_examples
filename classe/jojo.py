@@ -2,7 +2,7 @@ class JoJo:
     # Construtor
     def __init__(self):
         self.status_stand = False
-    # Desconstrutor
+    # Destrutor
     def __del__(self):
         print (f"O usuário {self.GetNome()} foi excluído pelo desconstrutor.")
     # Getter
