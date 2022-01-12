@@ -16,4 +16,6 @@ while True:
     j1.SetStand(stand.title())
     break
 j1.Falar()
-#del j1
+j1.AtivarStand()
+j1.DesativarStand()
+del j1
