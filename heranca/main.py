@@ -5,7 +5,7 @@ c1 = Carro()
 while True:
   marca_carro = str(input("Digite a marca do carro (Ex: M1): "))
   if (len(marca_carro.split()) <= 0):
-    print('A marca do carro não pode ficar vazio, refaça corretamente a operação.')
+    print('A marca do carro não pode ficar vazio, refaça novamente a operação.')
   else:
     c1.setMarca(marca_carro.title())
     break
@@ -34,7 +34,7 @@ while True:
         else:
           c1.setAno(ano_carro)
           break
-    except Exception:
+    except (ValueError, TypeError):
         print("Apenas números inteiros são permitidos, refaça corretamente a operação.")   
 # Campo valor do carro
 while True:
@@ -45,7 +45,7 @@ while True:
         else:
           c1.setValor(valor_carro)
           break
-    except Exception:
+    except (ValueError, TypeError):
         print("Apenas números são permitidos, refaça corretamente a operação.")
 print("\n")
 c1.Interacao()
