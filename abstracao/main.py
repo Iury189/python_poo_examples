@@ -30,7 +30,7 @@ while True:
         else:
           m1.setAno(ano_moto)
           break
-    except Exception:
+    except (ValueError, TypeError):
         print("Apenas números inteiros são permitidos")
 while True:
     try:
@@ -40,7 +40,7 @@ while True:
         else:
           m1.setValor(valor_moto)
           break
-    except Exception:
+    except (ValueError, TypeError):
         print("Apenas números são permitidos")
 print("\n")
 m1.Interacao()
