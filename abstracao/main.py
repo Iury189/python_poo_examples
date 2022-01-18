@@ -31,7 +31,7 @@ while True:
           m1.setAno(ano_moto)
           break
     except (ValueError, TypeError):
-        print("Apenas números inteiros são permitidos")
+        print("Apenas números inteiros são permitidos.")
 while True:
     try:
         valor_moto = float(input("Digite o valor da moto: "))
@@ -41,6 +41,6 @@ while True:
           m1.setValor(valor_moto)
           break
     except (ValueError, TypeError):
-        print("Apenas números são permitidos")
+        print("Apenas números são permitidos.")
 print("\n")
 m1.Interacao()
