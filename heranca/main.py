@@ -3,28 +3,37 @@ from carro import Carro
 c1 = Carro()
 # Campo marca
 while True:
-  marca_carro = str(input("Digite a marca do carro (Ex: M1): "))
-  if (len(marca_carro.split()) <= 0):
-    print('A marca do carro não pode ficar vazio, refaça novamente a operação.')
-  else:
-    c1.setMarca(marca_carro.title())
-    break
+  try:
+      marca_carro = str(input("Digite a marca do carro (Ex: M1): "))
+      if (len(marca_carro.split()) <= 0):
+        print('A marca do carro não pode ficar vazio, refaça novamente a operação, refaça corretamente a operação.')
+      else:
+        c1.setMarca(marca_carro.title())
+        break
+  except KeyboardInterrupt:
+      print("O usuário não pode interromper a operação no meio do processo, refaça corretamente a operação.")
 # Campo modelo
-while True:
-  modelo_carro = str(input("Digite o modelo do carro (Ex: MD1): "))
-  if (len(modelo_carro.split()) <= 0):
-    print('O modelo do carro não pode ficar vazio, refaça corretamente a operação.')
-  else:
-    c1.setModelo(modelo_carro.title())
-    break
+while True:   
+    try:
+        modelo_carro = str(input("Digite o modelo do carro (Ex: MD1): "))
+        if (len(modelo_carro.split()) <= 0):
+          print('O modelo do carro não pode ficar vazio, refaça corretamente a operação, refaça corretamente a operação.')
+        else:
+          c1.setModelo(modelo_carro.title())
+          break
+    except KeyboardInterrupt:
+        print("O usuário não pode interromper a operação no meio do processo, refaça corretamente a operação.")
 # Campo cor
-while True:
-  cor_carro = str(input("Digite a cor do carro (Ex: Vermelho): "))
-  if (len(cor_carro.split()) <= 0):
-    print('A cor do carro não pode ficar vazio, refaça corretamente a operação.')
-  else:
-    c1.setCor(cor_carro.title())
-    break
+while True:  
+    try:
+        cor_carro = str(input("Digite a cor do carro (Ex: Vermelho): "))
+        if (len(cor_carro.split()) <= 0):
+          print('A cor do carro não pode ficar vazio, refaça corretamente a operação.')
+        else:
+          c1.setCor(cor_carro.title())
+          break
+    except KeyboardInterrupt:
+        print("O usuário não pode interromper a operação no meio do processo, refaça corretamente a operação.")
 # Campo ano de fabricação
 while True:
     try:
@@ -35,7 +44,9 @@ while True:
           c1.setAno(ano_carro)
           break
     except (ValueError, TypeError):
-        print("Apenas números inteiros são permitidos, refaça corretamente a operação.")   
+        print("Apenas números inteiros são permitidos, refaça corretamente a operação.")
+    except KeyboardInterrupt:
+        print("O usuário não pode interromper a operação no meio do processo, refaça corretamente a operação.")
 # Campo valor do carro
 while True:
     try:
@@ -47,5 +58,7 @@ while True:
           break
     except (ValueError, TypeError):
         print("Apenas números são permitidos, refaça corretamente a operação.")
+    except KeyboardInterrupt:
+        print("O usuário não pode interromper a operação no meio do processo, refaça corretamente a operação.")
 print("\n")
 c1.Interacao()
