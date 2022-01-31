@@ -27,7 +27,7 @@ class JoJo:
         print(f"Nome: {self.GetNome()}")
         print (f"Stand: {self.GetStand()}")
         print ("Status do stand: " + {True: "Ativo", False: "Inativo"}[self.status_stand])
-        if (self.status_stand == False):
-            self.DesativarStand()
-        else:
+        if (self.status_stand):
             self.AtivarStand()
+        else:
+            self.DesativarStand()
