@@ -11,18 +11,21 @@ class JoJo:
     # Setter
     def SetNome(self, nome): self.nome = nome
     def SetStand(self, stand): self.stand = stand
+    # Método AtivarStand()    
     def AtivarStand(self):
         if self.status_stand:
             print(f"{self.GetStand()} já está invocado.")
         else:
             self.status_stand = True
             print(f"{self.GetStand()} foi invocado.")
+    # Método DesativarStand()
     def DesativarStand(self):
         if self.status_stand == False:
             print(f"{self.GetStand()} já está oculto.")
         else:
             self.status_stand = False
             print(f"{self.GetStand()} foi ocultado.")
+    # Método Falar()        
     def Falar(self): 
         print(f"Nome: {self.GetNome()}")
         print (f"Stand: {self.GetStand()}")
