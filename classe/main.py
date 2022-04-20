@@ -3,7 +3,7 @@ from jojo import JoJo
 jojo = JoJo()
 
 while True:
-  nome = input("Digite o nome do usuário: ")
+  nome = str(input("Digite o nome do usuário: "))
   if nome.strip() == '':
     print("O nome do usuário não pode ficar vazio.")
   else:
