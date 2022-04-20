@@ -4,30 +4,29 @@ class JoJo:
         self.status_stand = False
     # Destrutor
     def __del__(self):
-        print (f"O usuário {self.GetNome()} foi excluído pelo destrutor.")
+        print (f"O usuário {self.getNome()} foi excluído pelo destrutor.")
     # Getter
-    def GetNome(self): return self.nome
-    def GetStand(self): return self.stand
+    def getNome(self): return self.nome
+    def getStand(self): return self.stand
     # Setter
-    def SetNome(self, nome): self.nome = nome
-    def SetStand(self, stand): self.stand = stand
-    # Método AtivarStand()    
-    def AtivarStand(self):
+    def setNome(self, nome): self.nome = nome
+    def setStand(self, stand): self.stand = stand
+    # Método ativarStand()    
+    def ativarStand(self):
         if self.status_stand:
-            print(f"{self.GetStand()} já está invocado.")
+            print(f"{self.getStand()} já está invocado.")
         else:
             self.status_stand = True
-            print(f"{self.GetStand()} foi invocado.")
-    # Método DesativarStand()
-    def DesativarStand(self):
+            print(f"{self.getStand()} foi invocado.")
+    # Método desativarStand()
+    def desativarStand(self):
         if self.status_stand == False:
-            print(f"{self.GetStand()} já está oculto.")
+            print(f"{self.getStand()} já está oculto.")
         else:
             self.status_stand = False
-            print(f"{self.GetStand()} foi ocultado.")
-    # Método Falar()        
-    def Falar(self): 
-        print(f"Nome: {self.GetNome()}")
-        print (f"Stand: {self.GetStand()}")
-        print ("Status do stand: " + {True: "Ativo", False: "Inativo"}[self.status_stand])
-        self.AtivarStand() if self.status_stand else self.DesativarStand()
+            print(f"{self.getStand()} foi ocultado.")
+    # Método falar()        
+    def falar(self):
+        print(f"Nome: {self.getNome()} | Stand: {self.getStand()}")
+        print ("Status do stand: " + {True: "Ativo.", False: "Inativo."}[self.status_stand])
+        self.ativarStand() if self.status_stand else self.desativarStand()
