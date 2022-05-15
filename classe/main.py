@@ -1,4 +1,4 @@
-from jojo import JoJo
+from jojo import *
     
 jojo = JoJo()
 
