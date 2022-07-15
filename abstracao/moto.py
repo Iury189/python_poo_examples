@@ -4,7 +4,6 @@ import pytz
 from datetime import datetime
 
 class Moto(veiculo.Veiculo):
-  # Método Interacao()
   def Interacao(self):
     locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
     hora_atual = datetime.now(pytz.timezone('America/Sao_Paulo')).strftime('%d/%m/%Y %H:%M:%S')
