@@ -1,2 +1,2 @@
 class DevilHunter:
-  def Interacao(): pass
+  def interacao(): pass
