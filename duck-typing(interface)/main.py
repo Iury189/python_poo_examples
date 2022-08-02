@@ -6,4 +6,4 @@ onca = Onca()
 puma = Puma()
 pantera = Pantera()
 
-pantera.Pegar(puma)
+pantera.pegar(puma)
