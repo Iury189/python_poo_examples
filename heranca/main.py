@@ -61,4 +61,4 @@ while True:
     except KeyboardInterrupt:
         print("O usuário não pode interromper a operação no meio do processo, refaça corretamente a operação.")
 print("\n")
-c1.Interacao()
+c1.interacao()
