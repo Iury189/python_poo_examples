@@ -3,5 +3,5 @@ from nero import Nero
 
 dante = Dante()
 nero = Nero()
-dante.Interacao()
-nero.Interacao()
+dante.interacao()
+nero.interacao()
