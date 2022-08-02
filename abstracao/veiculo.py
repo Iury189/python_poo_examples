@@ -12,4 +12,4 @@ class Veiculo:
   def setAno(self, ano): self.ano = ano
   def setValor(self, valor): self.valor = valor
   # Método abstrato
-  def Interacao(self): pass
+  def interacao(self): pass
