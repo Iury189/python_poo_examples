@@ -43,4 +43,4 @@ while True:
     except (ValueError, TypeError):
         print("Apenas números são permitidos, refaça corretamente a operação.")
 print("\n")
-m1.Interacao()
+m1.interacao()
