@@ -8,9 +8,11 @@ class JoJo:
     # Getter
     def getNome(self): return self.nome
     def getStand(self): return self.stand
+    def getStatusStand(self): return self.status_stand
     # Setter
     def setNome(self, nome): self.nome = nome
     def setStand(self, stand): self.stand = stand
+    def setStatusStand(self, status_stand): self.status_stand = status_stand
     # Método ativarStand()    
     def ativarStand(self):
         if self.status_stand:
